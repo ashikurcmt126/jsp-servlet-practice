@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         xmlns="https://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="https://xmlns.jcp.org/xml/ns/javaee https://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID"
+         version="3.1">
+    <display-name>Spring MVC Application 2</display-name>
+
+<!--    Servlet declaration-->
+    <servlet>
+        <servlet-name>first</servlet-name>
+        <servlet-class>com.servlets.FirstServlets</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>second</servlet-name>
+        <servlet-class>com.servlets.SecondServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>myservlet</servlet-name>
+        <servlet-class>com.servlets.MyServlet</servlet-class>
+    </servlet>
+
+<!--    mapping-->
+    <servlet-mapping>
+        <servlet-name>first</servlet-name>
+        <url-pattern>/web</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>second</servlet-name>
+        <url-pattern>/second</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>myservlet</servlet-name>
+        <url-pattern>/myservlet</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
