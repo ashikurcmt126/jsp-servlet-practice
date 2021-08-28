@@ -18,19 +18,30 @@
         <servlet-name>myservlet</servlet-name>
         <servlet-class>com.servlets.MyServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>com.practice.RegisterServlet</servlet-class>
+    </servlet>
 
 <!--    mapping-->
     <servlet-mapping>
         <servlet-name>first</servlet-name>
         <url-pattern>/web</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>second</servlet-name>
         <url-pattern>/second</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>myservlet</servlet-name>
         <url-pattern>/myservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/registerServlet</url-pattern>
     </servlet-mapping>
 
 
